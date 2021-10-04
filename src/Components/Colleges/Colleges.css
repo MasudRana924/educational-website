@@ -1,0 +1,12 @@
+.trainers{
+    border-bottom: 1px solid gray;
+}
+.students{
+    border-bottom: 1px solid seagreen;
+}
+.job{
+    border-bottom: 1px solid chocolate;
+}
+.button{
+    background-color: #507fcf;
+}
