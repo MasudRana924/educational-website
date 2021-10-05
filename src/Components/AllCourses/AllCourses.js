@@ -9,7 +9,7 @@ const AllCourses = () => {
    
     useEffect(() => {
 
-        fetch('./courses.JSON')
+        fetch('./allcourses.JSON')
             .then(res => res.json())
             .then(data =>{
                 console.log(data);

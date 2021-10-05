@@ -34,11 +34,11 @@ function App() {
             <Payments></Payments>
             <Reviews></Reviews>
           </Route>
-          <Route path="/home">
+          <Route  path="/home">
             <Courses></Courses>
             <Colleges></Colleges>
             <Payments></Payments>
-          <Service></Service>
+            <Service></Service>
             <Reviews></Reviews>
 
           </Route>
@@ -47,9 +47,6 @@ function App() {
 
 
           </Route>
-
-
-          
           <Route path="/about">
             <AboutUs></AboutUs>
           </Route>

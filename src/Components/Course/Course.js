@@ -23,6 +23,8 @@ const Course = (props) => {
       </div>
 
     </Col>
+    
+  
 
 
 
