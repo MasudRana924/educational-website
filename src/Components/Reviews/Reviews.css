@@ -1,4 +1,11 @@
 .people-say{
     border-bottom: 1px solid lightslategray;
-    width:300px;
+    
+}
+.iconTwo{
+    color:gold;
+    font-size: 14px;
+}
+.review{
+    margin-top: 120px;
 }

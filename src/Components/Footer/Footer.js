@@ -8,10 +8,10 @@ import './Footer.css'
 const Footer = () => {
     return (
         <Container fluid className="footer">
-            <Row xs={1} md={3}>
+            <Row xs={2} md={3}>
                 <Col>
                     <h4>Explore Us</h4>
-                    <FontAwesomeIcon icon={faFacebookF} className="icon mt-3" />
+                    <FontAwesomeIcon icon={faFacebookF} className="fb-icon mt-3" />
                     <FontAwesomeIcon icon={faInstagram} className="insta-icon ms-3 mt-3" />
                     <FontAwesomeIcon icon={faYoutube} className="youtube-icon ms-3 mt-3" />
                     <FontAwesomeIcon icon={faGoogle} className="google-icon ms-3 mt-3" />

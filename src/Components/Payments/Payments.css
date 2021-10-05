@@ -1,0 +1,13 @@
+.payment{
+    margin-top: 120px;
+}
+.button{
+background-color: gold;
+border:1px solid gold
+}
+.access{
+    border-bottom: 1px solid gray;
+}
+.check-icon{
+    color: seagreen;
+}

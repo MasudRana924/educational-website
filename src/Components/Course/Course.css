@@ -1,0 +1,16 @@
+.image{
+    height:250px;
+    width:100%;
+}
+
+.details{
+    text-decoration: none;
+}
+.button{
+display: none;
+}
+.courses-style:hover .button{
+ display: block;
+ height:40px;
+ transition: 0.3s;
+}

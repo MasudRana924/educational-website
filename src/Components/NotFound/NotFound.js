@@ -4,7 +4,7 @@ import NotFoundImg from '../../images/404.jpg'
 
 const NotFound = () => {
     return (
-       <Container>
+       <Container fluid>
            <img src={NotFoundImg} alt="" />
        </Container>
     );

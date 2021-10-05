@@ -10,7 +10,7 @@ const ContactUs = () => {
                 <Col>
                     <Card className=" w-75 mx-auto">
                        <Card.Body>
-                       <h3 class="mt-3 h3 text-start ">Give feedback </h3>
+                       <h3 className="mt-3 h3 text-start ">Give feedback </h3>
                      
                         <input type="text" class="form-control  mt-3 mb-3 h-75" placeholder="enter your email" />
                      
@@ -21,7 +21,7 @@ const ContactUs = () => {
                                 style={{ height: '100px' }}
                             />
                         </FloatingLabel>
-                        <button class="w-100 btn rounded-3 bg-info mt-3">Send Us</button>
+                        <button className="w-100 btn rounded-3 bg-info mt-3">Send Us</button>
                         <br />
                        </Card.Body>
                     </Card>

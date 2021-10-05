@@ -12,10 +12,13 @@ import Reviews from './Components/Reviews/Reviews';
 import NotFound from '../src/Components/NotFound/NotFound'
 import Colleges from './Components/Colleges/Colleges';
 import Courses from './Components/Courses/Courses';
-import AllCourses from './Components/AllCourses/AllCourses';
+
 import ContactUs from './Components/ContactUs/ContactUs';
 import Admission from './Components/Admission/Admission';
 import AboutUs from './Components/AboutUs/AboutUs';
+import Payments from './Components/Payments/Payments';
+import Services from './Components/Services/Services';
+import Details from './Components/DetailsCourse/Details';
 
 function App() {
   return (
@@ -26,23 +29,34 @@ function App() {
           <Route exact path="/">
             <Courses></Courses>
             <Colleges></Colleges>
+            <Payments></Payments>
             <Reviews></Reviews>
           </Route>
           <Route path="/home">
-          <Courses></Courses>
+            <Courses></Courses>
             <Colleges></Colleges>
+            <Payments></Payments>
             <Reviews></Reviews>
-           
+
           </Route>
-          
-          <Route path="/contact">
-            <ContactUs></ContactUs>
+          <Route path="/course/:id">
+            <Details></Details>
+
+
           </Route>
+
+
           <Route path="/admission">
             <Admission></Admission>
           </Route>
           <Route path="/about">
             <AboutUs></AboutUs>
+          </Route>
+          <Route path="/contact">
+            <ContactUs></ContactUs>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

@@ -5,17 +5,18 @@ import './Header.css'
 const Header = () => {
     return (
         <Container fluid className="header"  >
-        <Navbar collapseOnSelect expand="lg"  fixed="top" variant="dark">
+        <Navbar collapseOnSelect expand="lg"   variant="dark">
         <Container>
-        <Navbar.Brand href="#home" className="text-dark fs-2">Programmer.com</Navbar.Brand>
+        <Navbar.Brand to="/home" className="text-dark fs-2">Programmer.com</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-primary" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <NavLink to="/home" className="ms-3 text-dark text-decoration-none fs-5">Home</NavLink>
-            <NavLink to="/about" className="ms-3 text-dark text-decoration-none fs-5" >About Us</NavLink>
-            <NavLink to="/contact" className="ms-3 text-dark text-decoration-none fs-5">Contact Us</NavLink>
-            <NavLink to="/admission" className="ms-3 text-dark text-decoration-none fs-5">Admission</NavLink>
-            <NavLink to="/courses" className="ms-3 text-dark text-decoration-none fs-5">Courses</NavLink>
+          <Nav className="me-auto nav-style">
+            <NavLink to="/home" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Home</NavLink>
+            <NavLink to="/about" className="ms-3 text-dark text-decoration-none fs-5 nav-style" >About Us</NavLink>
+            <NavLink to="/contact" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Contact Us</NavLink>
+            <NavLink to="/admission" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Admission</NavLink>
+            <NavLink to="/services" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Services</NavLink>
+           
            
            
           </Nav>

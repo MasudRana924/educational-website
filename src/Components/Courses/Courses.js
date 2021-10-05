@@ -1,52 +1,44 @@
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
-import html from '../../images/html.png'
-import java from '../../images/js.png'
-import react from '../../images/react.png'
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Container, FormControl, InputGroup, Row,Button } from 'react-bootstrap';
+
 import './Courses.css'
+import Course from './../Course/Course';
 const Courses = () => {
+    const [courses, setCourses] = useState([])
+   
+    useEffect(() => {
+
+        fetch('./courses.JSON')
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data);
+               setCourses(data)  
+            }
+               
+            )
+
+    }, [])
+   
+
     return (
-        <Container fluid className="mt-5 mb-5 pt-5">
-            <Row>
-                <Col>
-                    <Card>
-                        <Card.Img variant="top" className="mt-5 img" src={html} />
-                        <Card.Body>
-                            <Card.Title>HTML</Card.Title>
-                            <Card.Text>
-                                Price:1800Tk
-                            </Card.Text>
-                        </Card.Body>
+        <Container fluid >
+             
 
-                    </Card>
-                </Col>
-                <Col>
-                <Card>
-                        <Card.Img variant="top" className="mt-5 img" src={java} />
-                        <Card.Body>
-                            <Card.Title>JavaScript</Card.Title>
-                            <Card.Text>
-                                Price:3000Tk
-                            </Card.Text>
-                        </Card.Body>
 
-                    </Card>
-                </Col>
-                <Col>
-                <Card>
-                        <Card.Img variant="top" className="mt-5 img" src={react} />
-                        <Card.Body>
-                            <Card.Title>HTML</Card.Title>
-                            <Card.Text>
-                                Price:5000Tk
-                            </Card.Text>
-                        </Card.Body>
 
-                    </Card>
-                </Col>
-
+              <h4 className="text-center fs-3 text-warning mb-5 mt-5 people-say pb-1 w-25 mx-auto">Our Courses</h4>
+            <Row xs={1} md={4}>
+                {
+                    courses.map(course => <Course
+                        key={course.id}
+                        course={course}
+                    >
+                       
+                    </Course>)
+                }
             </Row>
-
         </Container>
     );
 };
