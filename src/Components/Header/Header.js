@@ -15,14 +15,15 @@ const Header = () => {
             <NavLink to="/about" className="ms-3 text-dark text-decoration-none fs-5 nav-style" >About Us</NavLink>
             <NavLink to="/contact" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Contact Us</NavLink>
             <NavLink to="/admission" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Admission</NavLink>
+            <NavLink to="/allcourses" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Courses</NavLink>
             <NavLink to="/services" className="ms-3 text-dark text-decoration-none fs-5 nav-style">Services</NavLink>
            
            
            
           </Nav>
           <Nav>
-            <Link ><Button variant="outline-primary" className="me-1">Login</Button></Link>
-            <Link ><Button variant="outline-info" className="ms-1">Signup</Button></Link>
+            <Link to="/login"><Button variant="outline-primary" className="me-1">Login</Button></Link>
+            <Link to="/signup"><Button variant="outline-info" className="ms-1">Signup</Button></Link>
            
           </Nav>
         </Navbar.Collapse>

@@ -7,7 +7,7 @@ const AboutUs = () => {
         <Row xs={2} md={4}>
             <Col xs={6} md={2}></Col>
             <Col xs={12} md={4} className="mt-5">
-                <h3 className="academy text-start text-success">Our Achievements </h3>
+                <h3 className="academy text-center text-success">Our Achievements </h3>
                 <p className="text-start">We got special most talented trainers</p>
                 <p className="text-start">We give a huge numbers of certificate to our students</p>
 

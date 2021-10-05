@@ -7,18 +7,20 @@ import {
   Link
 } from "react-router-dom"
 import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Reviews from './Components/Reviews/Reviews';
-import NotFound from '../src/Components/NotFound/NotFound'
-import Colleges from './Components/Colleges/Colleges';
 import Courses from './Components/Courses/Courses';
-
+import Colleges from './Components/Colleges/Colleges';
+import Payments from './Components/Payments/Payments';
+import Service from './Components/Services/Service/Service';
+import Reviews from './Components/Reviews/Reviews';
+import AboutUs from './Components/AboutUs/AboutUs';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Admission from './Components/Admission/Admission';
-import AboutUs from './Components/AboutUs/AboutUs';
-import Payments from './Components/Payments/Payments';
+import AllCourses from './Components/AllCourses/AllCourses';
 import Services from './Components/Services/Services';
 import Details from './Components/DetailsCourse/Details';
+import NotFound from '../src/Components/NotFound/NotFound'
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
@@ -36,6 +38,7 @@ function App() {
             <Courses></Courses>
             <Colleges></Colleges>
             <Payments></Payments>
+          <Service></Service>
             <Reviews></Reviews>
 
           </Route>
@@ -46,14 +49,18 @@ function App() {
           </Route>
 
 
-          <Route path="/admission">
-            <Admission></Admission>
-          </Route>
+          
           <Route path="/about">
             <AboutUs></AboutUs>
           </Route>
           <Route path="/contact">
             <ContactUs></ContactUs>
+          </Route>
+          <Route path="/admission">
+            <Admission></Admission>
+          </Route>
+          <Route path="/allcourses">
+            <AllCourses></AllCourses>
           </Route>
           <Route path="/services">
             <Services></Services>

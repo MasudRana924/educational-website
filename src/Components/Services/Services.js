@@ -46,6 +46,45 @@ const Services = () => {
                 </Col>
                
             </Row>
+            <Row xs={1} md={3} className="mx-auto mt-5">
+             
+             <Col className="mt-3 " md={4}>
+
+                 <div className="card-style">
+                     <p><FontAwesomeIcon icon={faGraduationCap} className="icon" /> </p>
+                     <div className="ps-1 pe-1">
+                         <h4 className="text-center">On/Offline Class Facility</h4>
+                         <p className="text-start">We can teach our student via virtul for those student who live abroad and take class on class romm those student live in city</p>
+
+                     </div>
+                 </div>
+
+
+             </Col>
+             <Col className="mt-3 " md={4}>
+             <div className="card-style">
+                     <p><FontAwesomeIcon icon={faStamp} className="icon" /> </p>
+                     <div className="ps-1 pe-1">
+                         <h4 className="text-center">Free Education </h4>
+                         <p className="text-start">You can earn a certificate in a variety of global health areas by successfully completing all courses within a program area</p>
+
+                     </div>
+                 </div>
+             </Col>
+             <Col className="mt-3 " md={4}>
+             <div className="card-style">
+                     <p><FontAwesomeIcon icon={faGlobeAsia} className="icon" /> </p>
+                     <div className="ps-1 pe-1">
+                         <h4 className="text-center">Social Awarness </h4>
+                         <p className="text-start">We teach our students about social awarness , use social media for good work that helps society</p>
+
+                     </div>
+                 </div>
+             </Col>
+            
+         </Row>
+
+
 
         </Container>
     );
