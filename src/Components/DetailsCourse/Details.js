@@ -18,8 +18,7 @@ const Details = () => {
             <h4>Details is comming soon !!!</h4>
 
             <div className="w-50 mx-auto">
-                {
-                    course.find(course => course.id === id)}
+                
 
 
                 < Row xs={1} md={1}>
@@ -29,7 +28,7 @@ const Details = () => {
                         <div>
                             <h4 className="mt-5">{course.name}</h4>
                             <p className="text-start fs-6 ms-1">{course.desc}</p>
-                            <p className="text-start fs-6 ms-1">Price : <span className="text-danger">{course.price}tk</span> </p>
+                            <p className="text-start fs-6 ms-1"><span className="text-danger">{course.price}</span> </p>
                         </div>
                     </div>
                 </Row>
