@@ -6,7 +6,7 @@ import './NotFound.css'
 const NotFound = () => {
     return (
        <Container fluid>
-           <img src={NotFoundImg} className="img-fluid w-50 mx-auto " alt="" />
+           <img src={NotFoundImg} className="img-fluid " alt="" />
        </Container>
     );
 };
