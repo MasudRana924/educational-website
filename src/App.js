@@ -35,7 +35,7 @@ function App() {
             <Service></Service>
             <Reviews></Reviews>
           </Route>
-          <Route  path="/home">
+          <Route exact path="/home">
             <Courses></Courses>
             <Colleges></Colleges>
             <Payments></Payments>
